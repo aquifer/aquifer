@@ -1,0 +1,45 @@
+{
+  "name": "aquifer",
+  "version": "0.0.1",
+  "description": "Drupal build, test, and deployment CLI.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aquifer/aquifer.git"
+  },
+  "keywords": [
+    "framework"
+  ],
+  "author": {
+    "name": "Patrick Coffey",
+    "email": "patrickcoffey48@gmail.com",
+    "url": "http://patrickcoffey.io"
+  },
+  "bugs": {
+    "url": "https://github.com/aquifer/aquifer/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/aquifer/aquifer/blob/master/LICENSE"
+    }
+  ],
+  "bin": {
+    "aquifer": "aquifer.js"
+  },
+  "preferGlobal": "true",
+  "homepage": "https://github.com/aquifer/aquifer",
+  "dependencies": {
+    "chalk": "^1.0.0",
+    "commander": "^2.7.1",
+    "fs-extra": "^0.18.0",
+    "lodash": "^3.6.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-jscs": "^1.5.1",
+    "gulp-jshint": "^1.10.0"
+  }
+}
