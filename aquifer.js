@@ -20,6 +20,9 @@ Aquifer.init.setup();
 // APIs.
 Aquifer.project = require('./lib/project.api.js')(Aquifer);
 
+// Commands.
+Aquifer.create = require('./lib/create.command.js')(Aquifer);
+
 // If no arguments passed in, output cli docs. Else parse.
 if (!process.argv.slice(2).length) {
   Aquifer.console.log(Aquifer.art + '\n', 'success');
