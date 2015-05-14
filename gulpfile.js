@@ -6,10 +6,10 @@
 
 'use strict';
 
-var gulp = require('gulp'),
-    jshint = require('gulp-jshint'),
-    jscs = require('gulp-jscs'),
-    jsFilePatterns = [
+var gulp            = require('gulp'),
+    jshint          = require('gulp-jshint'),
+    jscs            = require('gulp-jscs'),
+    jsFilePatterns  = [
       'index.js',
       'lib/*.js',
       'lib/**/*.js'
