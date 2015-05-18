@@ -13,18 +13,18 @@
 /* globals require */
 
 var Aquifer = {};
-Aquifer.console = require('./lib/console.api.js')(Aquifer);
-Aquifer.init = require('./lib/init.api.js')(Aquifer);
+Aquifer.console = require('../lib/console.api.js')(Aquifer);
+Aquifer.init = require('../lib/init.api.js')(Aquifer);
 Aquifer.init.setup();
 
 // APIs.
-Aquifer.project = require('./lib/project.api.js')(Aquifer);
-Aquifer.build = require('./lib/build.api.js')(Aquifer);
+Aquifer.project = require('../lib/project.api.js')(Aquifer);
+Aquifer.build = require('../lib/build.api.js')(Aquifer);
 
 // Commands.
 Aquifer.commands = {
-  create: require('./lib/create.command.js')(Aquifer),
-  build: require('./lib/build.command.js')(Aquifer)
+  create: require('../lib/create.command.js')(Aquifer),
+  build: require('../lib/build.command.js')(Aquifer)
 }
 
 // If no arguments passed in, output cli docs. Else parse.

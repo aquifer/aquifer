@@ -27,7 +27,7 @@
     }
   ],
   "bin": {
-    "aquifer": "aquifer.js"
+    "aquifer": "./bin/aquifer.js"
   },
   "preferGlobal": "true",
   "homepage": "https://github.com/aquifer/aquifer",
