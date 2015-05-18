@@ -13,21 +13,21 @@
 /* globals require, process */
 
 var Aquifer = {};
-Aquifer.console = require('./lib/console.api.js')(Aquifer);
-Aquifer.init = require('./lib/init.api.js')(Aquifer);
+Aquifer.console = require('../lib/console.api.js')(Aquifer);
+Aquifer.init = require('../lib/init.api.js')(Aquifer);
 Aquifer.init.setup();
 
 // APIs.
-Aquifer.project = require('./lib/project.api.js')(Aquifer);
-Aquifer.build = require('./lib/build.api.js')(Aquifer);
-Aquifer.refresh = require('./lib/refresh.api.js')(Aquifer);
+Aquifer.project = require('../lib/project.api.js')(Aquifer);
+Aquifer.build = require('../lib/build.api.js')(Aquifer);
+Aquifer.refresh = require('../lib/refresh.api.js')(Aquifer);
 
 // Commands.
 Aquifer.commands = {
-  create: require('./lib/create.command.js')(Aquifer),
-  build: require('./lib/build.command.js')(Aquifer),
-  refresh: require('./lib/refresh.command.js')(Aquifer)
-};
+  create: require('../lib/create.command.js')(Aquifer),
+  build: require('../lib/build.command.js')(Aquifer),
+  refresh: require('../lib/refresh.command.js')(Aquifer)
+}
 
 // If no arguments passed in, output cli docs. Else parse.
 if (!process.argv.slice(2).length) {
