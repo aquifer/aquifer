@@ -1,0 +1,43 @@
+{
+  "name": "false",
+  "paths": {
+    "make": "drupal.make",
+    "settings": "settings",
+    "builds": "builds/",
+    "themes": {
+      "root": "themes/",
+      "contrib": "themes/contrib",
+      "custom": "themes/custom"
+    },
+    "modules": {
+      "root": "modules",
+      "contrib": "modules/contrib",
+      "custom": "modules/custom",
+      "features": "modules/features"
+    }
+  },
+  "extensions": [],
+  "refreshCommands": [
+    [
+      "updb"
+    ],
+    [
+      "cc",
+      "all"
+    ],
+    [
+      "en",
+      "master"
+    ],
+    [
+      "master-execute",
+      "--scope=local"
+    ],
+    [
+      "fra"
+    ],
+    [
+      "rr"
+    ]
+  ]
+}

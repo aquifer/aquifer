@@ -15,15 +15,19 @@
 var Aquifer = {};
 Aquifer.console = require('../lib/console.api.js')(Aquifer);
 Aquifer.init = require('../lib/init.api.js')(Aquifer);
-Aquifer.init.setup();
 
 // APIs.
-Aquifer.project = require('../lib/project.api.js')(Aquifer);
-Aquifer.build = require('../lib/build.api.js')(Aquifer);
-Aquifer.refresh = require('../lib/refresh.api.js')(Aquifer);
+Aquifer.api = {
+  project: require('../lib/project.api.js')(Aquifer),
+  build: require('../lib/build.api.js')(Aquifer),
+  refresh: require('../lib/refresh.api.js')(Aquifer)
+}
+
+// Initialize.
+Aquifer.init.setup();
 
 // Commands.
-Aquifer.commands = {
+Aquifer.command = {
   create: require('../lib/create.command.js')(Aquifer),
   build: require('../lib/build.command.js')(Aquifer),
   refresh: require('../lib/refresh.command.js')(Aquifer)
