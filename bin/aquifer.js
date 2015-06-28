@@ -20,7 +20,8 @@ Aquifer.init = require('../lib/init.api.js')(Aquifer);
 Aquifer.api = {
   project: require('../lib/project.api.js')(Aquifer),
   build: require('../lib/build.api.js')(Aquifer),
-  refresh: require('../lib/refresh.api.js')(Aquifer)
+  refresh: require('../lib/refresh.api.js')(Aquifer),
+  extension: require('../lib/extension.api.js')(Aquifer)
 }
 
 // Initialize.
@@ -30,7 +31,8 @@ Aquifer.init.setup();
 Aquifer.command = {
   create: require('../lib/create.command.js')(Aquifer),
   build: require('../lib/build.command.js')(Aquifer),
-  refresh: require('../lib/refresh.command.js')(Aquifer)
+  refresh: require('../lib/refresh.command.js')(Aquifer),
+  extension: require('../lib/extension.command.js')(Aquifer)
 }
 
 // If no arguments passed in, output cli docs. Else parse.
