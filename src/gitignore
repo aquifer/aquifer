@@ -9,3 +9,5 @@ modules/README.txt
 themes/README.txt
 modules/contrib
 themes/contrib
+
+.aquifer/node_modules
