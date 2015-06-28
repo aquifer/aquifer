@@ -1,5 +1,5 @@
 {
-  "name": "false",
+  "name": false,
   "paths": {
     "make": "drupal.make",
     "settings": "settings",
