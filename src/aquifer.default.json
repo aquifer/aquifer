@@ -2,6 +2,7 @@
   "name": false,
   "paths": {
     "make": "drupal.make",
+    "lock": "drupal.make.lock",
     "settings": "settings",
     "builds": "builds/",
     "themes": {
