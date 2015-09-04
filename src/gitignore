@@ -9,3 +9,7 @@ modules/README.txt
 themes/README.txt
 modules/contrib
 themes/contrib
+
+db.settings.php
+secret.settings.php
+local.settings.php
