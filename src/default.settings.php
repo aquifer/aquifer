@@ -79,7 +79,6 @@ $conf['master_modules'] = array(
 );
 
 $update_free_access = FALSE;
-$drupal_hash_salt = '';
 
 ini_set('session.gc_probability', 1);
 ini_set('session.gc_divisor', 100);
