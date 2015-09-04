@@ -28,28 +28,23 @@ $conf['master_modules'] = array(
   'base' => array(
 
     // Core modules.
-    'admin_menu',
     'block',
     'comment',
-    'field_ui',
     'file',
     'help',
     'list',
-    'maxlength',
     'menu',
-    'menu_block',
     'number',
     'options',
     'path',
     'rdf',
     'search',
-    'strongarm',
     'taxonomy',
-    'token',
     'url',
     'views',
 
     // Contrib modules.
+    'admin_menu',
     'entity',
     'entityreference',
     'features',
@@ -60,6 +55,7 @@ $conf['master_modules'] = array(
     'panels',
     'pathauto',
     'strongarm',
+    'token',
     'views',
 
     // Custom modules.
@@ -71,6 +67,7 @@ $conf['master_modules'] = array(
     'coder',
     'devel',
     'devel_generate',
+    'field_ui',
     'views_ui',
   ),
   'dev' => array(),
