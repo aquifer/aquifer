@@ -14,3 +14,5 @@ aquifer.secrets.json
 db.settings.php
 secret.settings.php
 local.settings.php
+
+.aquifer/node_modules

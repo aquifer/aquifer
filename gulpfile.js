@@ -7,7 +7,7 @@
 'use strict';
 
 var gulp            = require('gulp'),
-    jshint          = require('gulp-jshint'),
+    eslint          = require('gulp-eslint'),
     jscs            = require('gulp-jscs'),
     jsFilePatterns  = [
       'index.js',
@@ -22,11 +22,10 @@ var gulp            = require('gulp'),
  */
 gulp.task('lint', function () {
   return gulp.src(jsFilePatterns)
-  .pipe(jshint())
-  .pipe(jshint.reporter('default'))
+  .pipe(eslint())
+  .pipe(eslint.format())
   .pipe(jscs());
 });
-
 /**
  * @task watch
  * Runs lint tasks when files are changed.
