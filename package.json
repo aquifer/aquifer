@@ -45,6 +45,7 @@
   },
   "devDependencies": {
     "gulp": "^3.8.11",
+    "gulp-eslint": "^1.0.0",
     "gulp-jscs": "^1.5.1",
     "gulp-jshint": "^1.10.0"
   }

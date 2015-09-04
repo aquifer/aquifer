@@ -17,7 +17,7 @@
       "features": "modules/features"
     }
   },
-  "extensions": [],
+  "extensions": {},
   "refreshCommands": [
     [
       "updb"
