@@ -21,6 +21,7 @@ defaults[projects][subdir] = contrib
 ; --------
 projects[admin_menu][version] = 3.0-rc4
 projects[coder][version] = 2.3
+projects[ctools][version] = 1.9
 projects[devel][version] = 1.5
 projects[entity][version] = 1.5
 projects[entityreference][version] = 1.1
@@ -32,6 +33,7 @@ projects[master][version] = 2.0-beta3
 projects[panels][version] = 3.4
 projects[pathauto][version] = 1.2
 projects[strongarm][version] = 2.0
+projects[token][version] = 1.6
 projects[views][version] = 3.8
 
 

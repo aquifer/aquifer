@@ -1,0 +1,19 @@
+env:
+    node: true
+
+rules:
+    indent: [2, 2, {VariableDeclarator: 2}]
+    comma-style: [2, "last"]
+    default-case: 2
+    guard-for-in: 2
+    no-floating-decimal: 2
+    no-nested-ternary: 2
+    no-undefined: 2
+    no-mixed-requires: [0, false]
+    radix: 2
+    space-after-keywords: [2, "always"]
+    space-before-blocks: 2
+    spaced-comment: [2, "always", { exceptions: ["-"]}]
+    valid-jsdoc: [2, { prefer: { "return": "returns"}}]
+    wrap-iife: 2
+    quotes: [2, "single", "avoid-escape"]

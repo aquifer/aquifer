@@ -4,9 +4,10 @@
     "make": "drupal.make",
     "lock": "drupal.make.lock",
     "settings": "settings",
-    "builds": "builds/",
+    "builds": "builds",
+    "root": "work",
     "themes": {
-      "root": "themes/",
+      "root": "themes",
       "contrib": "themes/contrib",
       "custom": "themes/custom"
     },
@@ -17,7 +18,7 @@
       "features": "modules/features"
     }
   },
-  "extensions": [],
+  "extensions": {},
   "refreshCommands": [
     [
       "updb"
