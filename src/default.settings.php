@@ -5,17 +5,27 @@
  */
 
 /**
- * Include database-specific configuration.
- */
-if (file_exists(DRUPAL_ROOT . '/sites/default/db.settings.php')) {
-  include DRUPAL_ROOT . '/sites/default/db.settings.php';
-}
-
-/**
  * Include secret configuration.
+ *
+ * IMPORTANT: This block should remain at the top of this file.
+ *
+ * The values in the included file are automatically generated from the settings
+ * in the "secrets" object in the aquifer.secrets.json file. You should not
+ * override the secret.settings.php file directly.
  */
 if (file_exists(DRUPAL_ROOT . '/sites/default/secret.settings.php')) {
   include DRUPAL_ROOT . '/sites/default/secret.settings.php';
+}
+
+/**
+ * Include database-specific configuration.
+ *
+ * The values in the included file are automatically generated from the settings
+ * in the "databases" object in the aquifer.secrets.json file. You should not
+ * override the db.settings.php file directly.
+ */
+if (file_exists(DRUPAL_ROOT . '/sites/default/db.settings.php')) {
+  include DRUPAL_ROOT . '/sites/default/db.settings.php';
 }
 
 /**
@@ -88,6 +98,8 @@ $conf['404_fast_html'] = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
 
 /**
  * Include local configuration.
+ *
+ * IMPORTANT: This block should remain at the bottom of this file.
  */
 if (file_exists(DRUPAL_ROOT . '/sites/default/local.settings.php')) {
   include DRUPAL_ROOT . '/sites/default/local.settings.php';
