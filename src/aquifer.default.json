@@ -4,6 +4,7 @@
     "make": "drupal.make",
     "settings": "settings",
     "build": "build",
+    "root": "root",
     "themes": {
       "root": "themes",
       "contrib": "themes/contrib",
