@@ -10,7 +10,7 @@ api = 2
 
 ; Core project.
 ; ------------
-projects[drupal][version] = 7.x
+projects[drupal][version] = 7.39
 
 
 ; Set contrib modules dir.
