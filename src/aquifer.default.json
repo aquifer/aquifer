@@ -4,8 +4,8 @@
     "make": "drupal.make",
     "lock": "drupal.make.lock",
     "settings": "settings",
-    "builds": "builds",
-    "root": "work",
+    "build": "build",
+    "root": "root",
     "themes": {
       "root": "themes",
       "contrib": "themes/contrib",
