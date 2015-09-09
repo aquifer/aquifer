@@ -7,25 +7,11 @@
 /**
  * Include secret configuration.
  *
- * IMPORTANT: This block should remain at the top of this file.
- *
- * The values in the included file are automatically generated from the settings
- * in the "secrets" object in the aquifer.secrets.json file. You should not
- * override the secret.settings.php file directly.
+ * Contains database settings and other sensitive environment specific
+ * information that shouldn't be in version control.
  */
 if (file_exists(DRUPAL_ROOT . '/sites/default/secret.settings.php')) {
   include DRUPAL_ROOT . '/sites/default/secret.settings.php';
-}
-
-/**
- * Include database-specific configuration.
- *
- * The values in the included file are automatically generated from the settings
- * in the "databases" object in the aquifer.secrets.json file. You should not
- * override the db.settings.php file directly.
- */
-if (file_exists(DRUPAL_ROOT . '/sites/default/db.settings.php')) {
-  include DRUPAL_ROOT . '/sites/default/db.settings.php';
 }
 
 /**
