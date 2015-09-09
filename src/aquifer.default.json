@@ -3,7 +3,7 @@
   "paths": {
     "make": "drupal.make",
     "settings": "settings",
-    "builds": "builds",
+    "build": "build",
     "root": "work",
     "rootFiles": "root_files",
     "themes": {
