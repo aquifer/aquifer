@@ -11,7 +11,6 @@ modules/contrib
 themes/contrib
 
 aquifer.secrets.json
-db.settings.php
 secret.settings.php
 local.settings.php
 
