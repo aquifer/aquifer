@@ -5,6 +5,7 @@
     "settings": "settings",
     "builds": "builds",
     "root": "work",
+    "coreFiles": "core_files",
     "themes": {
       "root": "themes",
       "contrib": "themes/contrib",
