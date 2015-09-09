@@ -10,7 +10,6 @@ themes/README.txt
 modules/contrib
 themes/contrib
 
-aquifer.secrets.json
 secret.settings.php
 local.settings.php
 
