@@ -1,7 +1,7 @@
 node_modules
 
 builds/*
-!builds/,gitkeep
+!builds/.gitkeep
 builds/workdir/*
 !builds/workdir/.gitkeep
 
