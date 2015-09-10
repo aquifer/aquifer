@@ -18,8 +18,7 @@
       "features": "modules/features"
     },
     "files": {
-      "root": "files",
-      "private": "files/private"
+      "root": "files"
     }
   },
   "extensions": {},
