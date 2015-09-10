@@ -5,9 +5,14 @@
  */
 
 /**
- * Include database-specific configuration.
+ * Include secret configuration.
+ *
+ * Contains database settings and other sensitive environment specific
+ * information that shouldn't be in version control.
  */
-include DRUPAL_ROOT . '/sites/default/db.settings.php';
+if (file_exists(DRUPAL_ROOT . '/sites/default/secret.settings.php')) {
+  include DRUPAL_ROOT . '/sites/default/secret.settings.php';
+}
 
 /**
  * Master module configuration.
@@ -19,28 +24,23 @@ $conf['master_modules'] = array(
   'base' => array(
 
     // Core modules.
-    'admin_menu',
     'block',
     'comment',
-    'field_ui',
     'file',
     'help',
     'list',
-    'maxlength',
     'menu',
-    'menu_block',
     'number',
     'options',
     'path',
     'rdf',
     'search',
-    'strongarm',
     'taxonomy',
-    'token',
     'url',
     'views',
 
     // Contrib modules.
+    'admin_menu',
     'entity',
     'entityreference',
     'features',
@@ -51,6 +51,7 @@ $conf['master_modules'] = array(
     'panels',
     'pathauto',
     'strongarm',
+    'token',
     'views',
 
     // Custom modules.
@@ -62,6 +63,7 @@ $conf['master_modules'] = array(
     'coder',
     'devel',
     'devel_generate',
+    'field_ui',
     'views_ui',
   ),
   'dev' => array(),
@@ -70,7 +72,6 @@ $conf['master_modules'] = array(
 );
 
 $update_free_access = FALSE;
-$drupal_hash_salt = '';
 
 ini_set('session.gc_probability', 1);
 ini_set('session.gc_divisor', 100);
@@ -80,3 +81,12 @@ ini_set('session.cookie_lifetime', 2000000);
 $conf['404_fast_paths_exclude'] = '/\/(?:styles)\//';
 $conf['404_fast_paths'] = '/\.(?:txt|png|gif|jpe?g|css|js|ico|swf|flv|cgi|bat|pl|dll|exe|asp)$/i';
 $conf['404_fast_html'] = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN" "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>404 Not Found</title></head><body><h1>Not Found</h1><p>The requested URL "@path" was not found on this server.</p></body></html>';
+
+/**
+ * Include local configuration.
+ *
+ * IMPORTANT: This block should remain at the bottom of this file.
+ */
+if (file_exists(DRUPAL_ROOT . '/sites/default/local.settings.php')) {
+  include DRUPAL_ROOT . '/sites/default/local.settings.php';
+}

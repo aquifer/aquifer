@@ -11,4 +11,7 @@ themes/contrib
 files/*
 !files/.gitkeep
 
+secret.settings.php
+local.settings.php
+
 .aquifer/node_modules
