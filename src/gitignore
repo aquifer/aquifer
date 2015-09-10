@@ -10,4 +10,7 @@ themes/README.txt
 modules/contrib
 themes/contrib
 
+secret.settings.php
+local.settings.php
+
 .aquifer/node_modules
