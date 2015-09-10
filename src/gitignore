@@ -1,14 +1,15 @@
 node_modules
 
-builds/*
-!builds/,gitkeep
-builds/workdir/*
-!builds/workdir/.gitkeep
+build/*
+!build/.gitkeep
 
 modules/README.txt
 themes/README.txt
 modules/contrib
 themes/contrib
+
+files/*
+!files/.gitkeep
 
 secret.settings.php
 local.settings.php
