@@ -16,6 +16,10 @@
       "contrib": "modules/contrib",
       "custom": "modules/custom",
       "features": "modules/features"
+    },
+    "files": {
+      "root": "files",
+      "private": "files/private"
     }
   },
   "extensions": {},

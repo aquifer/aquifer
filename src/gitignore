@@ -1,13 +1,14 @@
 node_modules
 
-builds/*
-!builds/,gitkeep
-builds/workdir/*
-!builds/workdir/.gitkeep
+build/*
+!build/.gitkeep
 
 modules/README.txt
 themes/README.txt
 modules/contrib
 themes/contrib
+
+files/*
+!files/.gitkeep
 
 .aquifer/node_modules
