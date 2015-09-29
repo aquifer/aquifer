@@ -26,6 +26,7 @@ gulp.task('lint', function () {
   .pipe(eslint.format())
   .pipe(jscs());
 });
+
 /**
  * @task watch
  * Runs lint tasks when files are changed.
