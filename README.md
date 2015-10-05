@@ -57,6 +57,14 @@ Aquifer uses the Drush make workflow to construct a drupal site root. To add con
 ### 4. Adding custom code
 Custom themes should be added to the `themes` folder within the Aquifer root, and likewise custom modules should be added to the `modules/custom` folder, or `modules/features` folder if the custom module is a feature. When you build the site, Aquifer will symlink those files into your site root.
 
+## Useful extensions
+Several extensions for Aquifer already exist, and you may find them useful:
+
+* [Aquifer Git](https://github.com/aquifer/aquifer-git) - Deploy Aquifer builds to a git repository (like Pantheon or Acquia).
+* [Aquifer Coder](https://github.com/aquifer/aquifer-coder) - Coding standards sniffing and linting utility.
+* [Aquifer Drush](https://github.com/aquifer/aquifer-drush) - Drush wrapper for Aquifer.
+* [Aquifer Artifact](https://github.com/aquifer/aquifer-artifact) - Aquifer extension for creating artifacts for deployment.
+
 ## Contributing
 Use the project, fork it, and submit PRs. We are responsive and will review them as soon as possible!
 
