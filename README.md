@@ -22,13 +22,13 @@ Aquifer should now be installed!
 Aquifer has some helpful command line documentation. Run `aquifer --help` to get a list of the commands that are availble to you at any given time. If you need documentation for a specific command, run `aquifer commandName --help`.
 
 If you need more in-depth documentation, checkout these wiki documents:
-* [What is Aquifer?](/aquifer/aquifer/wiki/What-is-Aquifer%3F)
-* [Installing Aquifer](/aquifer/aquifer/wiki/Installing-Aquifer)
-* [Creating Aquifer Projects](/aquifer/aquifer/wiki/Creating-Aquifer-Projects)
-* [Aquifer project directories](/aquifer/aquifer/wiki/Aquifer-project-directories)
-* [Building a Drupal site root](/aquifer/aquifer/wiki/Building-a-Drupal-site-root)
-* [Installing/refreshing a Drupal site](/aquifer/aquifer/wiki/Installing-refreshing-a-Drupal-site)
-* [Adding, removing, loading, and listing extensions](/aquifer/aquifer/wiki/Adding,-removing,-loading,-and-listing-extensions)
+* [What is Aquifer?](https://github.com/aquifer/aquifer/wiki/What-is-Aquifer%3F)
+* [Installing Aquifer](https://github.com/aquifer/aquifer/wiki/Installing-Aquifer)
+* [Creating Aquifer Projects](https://github.com/aquifer/aquifer/wiki/Creating-Aquifer-Projects)
+* [Aquifer project directories](https://github.com/aquifer/aquifer/wiki/Aquifer-project-directories)
+* [Building a Drupal site root](https://github.com/aquifer/aquifer/wiki/Building-a-Drupal-site-root)
+* [Installing/refreshing a Drupal site](https://github.com/aquifer/aquifer/wiki/Installing-refreshing-a-Drupal-site)
+* [Adding, removing, loading, and listing extensions](https://github.com/aquifer/aquifer/wiki/Adding,-removing,-loading,-and-listing-extensions)
 
 ## Quick-start guide
 You can easily get started using Aquifer with just a couple commands.
