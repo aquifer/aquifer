@@ -69,7 +69,7 @@ Several extensions for Aquifer already exist, and you may find them useful:
 Use the project, fork it, and submit PRs. We are responsive and will review them as soon as possible!
 
 ## Special thanks to...
-These guys are responsible for creating and maintaining Aquifer:
+These humanoids are responsible for creating and maintaining Aquifer:
 
 _listed in alphabetical order_
 * [Jeff Tomlinson](https://github.com/JeffTomlinson)
