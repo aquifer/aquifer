@@ -51,3 +51,21 @@ aquifer build
 
 This command will use Drush make and other tools to construct a Drupal site root, which will now be located in the `build` folder, or whatever folder is specified in `aquifer.json` in the `build` property.
 
+### 3. Adding contrib modules
+Aquifer uses the Drush make workflow to construct a drupal site root. To add contrib modules to your project, simply edit the `drupal.make` file and add your contrib modules there. Note that Aquifer makes use of Drush make lock files. If you make a change to `drupal.make` after you've already built your site, you'll need to add the `--refresh-lock` flag to the `aquifer build` command so that the lock file is recalculated when your site root is constructed. For more details, visit the [documentation page](https://github.com/aquifer/aquifer/wiki/Building-a-Drupal-site-root) for the build system.
+
+### 4. Adding custom code
+Custom themes should be added to the `themes` folder within the Aquifer root, and likewise custom modules should be added to the `modules/custom` folder, or `modules/features` folder if the custom module is a feature. When you build the site, Aquifer will symlink those files into your site root.
+
+## Contributing
+Use the project, fork it, and submit PRs. We are responsive and will review them as soon as possible!
+
+## Special thanks to...
+These guys are responsible for creating and maintaining Aquifer:
+
+_listed in alphabetical order_
+* [Jeff Tomlinson](https://github.com/JeffTomlinson)
+* [Jon Peck](https://github.com/fluxsauce)
+* [Matt Grill](https://github.com/mattgrill)
+* [Patrick Coffey](https://github.com/pscoffs)
+* [Peter Sieg](https://github.com/chasingmaxwell)
