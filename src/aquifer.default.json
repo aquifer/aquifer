@@ -2,7 +2,7 @@
   "name": false,
   "paths": {
     "make": "drupal.make",
-    "lock": "drupal.make.lock",
+    "lock": false,
     "settings": "settings",
     "build": "build",
     "root": "root",
