@@ -75,5 +75,5 @@ _listed in alphabetical order_
 * [Jeff Tomlinson](https://github.com/JeffTomlinson)
 * [Jon Peck](https://github.com/fluxsauce)
 * [Matt Grill](https://github.com/mattgrill)
-* [Patrick Coffey](https://github.com/pscoffs)
+* [Patrick Coffey](https://github.com/patrickocoffeyo)
 * [Peter Sieg](https://github.com/chasingmaxwell)
