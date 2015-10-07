@@ -1,7 +1,7 @@
 {
   "name": false,
   "paths": {
-    "make": "drupal.make",
+    "make": "drupal.make.yml",
     "lock": false,
     "settings": "settings",
     "build": "build",
