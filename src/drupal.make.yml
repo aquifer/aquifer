@@ -7,7 +7,8 @@ defaults:
     subdir: "contrib"
 
 projects:
-  - drupal
+  drupal:
+    version: ~
   admin_menu:
     version: ~
   coder:
