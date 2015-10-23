@@ -1,5 +1,4 @@
 <object data="https://raw.githubusercontent.com/aquifer/aquifer.io/master/branding/aquifer-logo-drupal.svg" type="image/svg+xml">
-  <img src="https://github.com/aquifer/aquifer.io/blob/master/branding/aquifer-logo-drupal-500px.png" alt="Aquifer for Drupal" title="Aquifer for Drupal"/>
 </object>
 
 Aquifer is a command line interface that makes it easy to scaffold, build, test, and deploy your Drupal websites. It provides a default set of tools that allow you to develop, and build Drupal sites using the Drush-make workflow. In addition, Aquifer ships with an extensions system that allows you to add additional tools to your project.
