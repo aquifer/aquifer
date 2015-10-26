@@ -84,3 +84,9 @@ These humanoids (in alphabetical order) are responsible for creating and maintai
 * [Matt Grill](https://github.com/mattgrill)
 * [Patrick Coffey](https://github.com/patrickocoffeyo)
 * [Peter Sieg](https://github.com/chasingmaxwell)
+
+## Credits and usage
+
+**Aquifer** is a trademark of Four Kitchens, LLC. You are free to use the logo to promote the Aquifer product as long as you do not modify it in any way.
+
+Drupal is a [registered trademark](http://drupal.com/trademark) of [Dries Buytaert](http://buytaert.net/).
