@@ -6,6 +6,7 @@
     "settings": "settings",
     "build": "build",
     "root": "root",
+    "drush": "drush",
     "themes": {
       "root": "themes",
       "contrib": "themes/contrib",
