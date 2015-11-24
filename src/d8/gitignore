@@ -1,0 +1,17 @@
+node_modules
+
+build/*
+!build/.gitkeep
+
+modules/README.txt
+themes/README.txt
+modules/contrib
+themes/contrib
+
+files/*
+!files/.gitkeep
+
+secret.settings.php
+local.settings.php
+
+.aquifer/node_modules
