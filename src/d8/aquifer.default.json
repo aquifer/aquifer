@@ -1,5 +1,6 @@
 {
   "name": false,
+  "core": 8,
   "paths": {
     "make": "drupal.make.yml",
     "lock": false,
@@ -36,14 +37,7 @@
       "master"
     ],
     [
-      "master-execute",
-      "--scope=local"
-    ],
-    [
       "fra"
-    ],
-    [
-      "rr"
     ]
   ]
 }

@@ -1,4 +1,4 @@
-core: 7.x
+core: 8.x
 api: 2
 
 # Common attributes.
@@ -9,38 +9,15 @@ defaults:
 projects:
   drupal:
     version: ~
-  admin_menu:
-    version: ~
-  coder:
-    version: ~
-  ctools:
-    version: ~
-  devel:
-    version: ~
-  entity:
-    version: ~
-  entityreference:
-    version: ~
   features:
     version: ~
   features_extra:
     version: ~
-  fences:
-    version: ~
   field_group:
-    version: ~
-  master:
     version: ~
   panels:
     version: ~
   pathauto:
     version: ~
-  strongarm:
-    version: ~
   token:
-    version: ~
-  views:
-    version: ~
-  # Themes.
-  aurora:
     version: ~

@@ -1,5 +1,6 @@
 {
   "name": false,
+  "core": 7,
   "paths": {
     "make": "drupal.make.yml",
     "lock": false,
