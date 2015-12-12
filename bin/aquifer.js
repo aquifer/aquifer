@@ -27,6 +27,10 @@ Aquifer.api = {
 // Initialize.
 Aquifer.init.setup();
 
+// Post Builds.
+// Extensions can declare a postBuild function that must return a promise.
+Aquifer.postBuilds = [];
+
 // Commands.
 Aquifer.command = {
   create: require('../lib/create.command.js')(Aquifer),
