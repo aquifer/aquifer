@@ -14,10 +14,9 @@ files/*
 secret.settings.php
 local.settings.php
 
-.aquifer
 .aquifer/node_modules
 aquifer.local.json
 
 .DS_Store
+Thumbs.db
 *.sql
-config.yml
