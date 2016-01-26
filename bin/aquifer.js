@@ -12,6 +12,8 @@
  *           |_|
  */
 
+'use strict';
+
 // Load Aquifer class and extend with libraries.
 const AquiferAPI = require('../lib/aquifer.api');
 AquiferAPI.prototype.console = require('../lib/console.api')(AquiferAPI);
@@ -25,25 +27,32 @@ AquiferAPI.prototype.api = {
 // Create instance of AquiferAPI.
 const Aquifer = new AquiferAPI();
 
-// Initialize cli, and project.
+// Initialize cli, project, and commands
 Aquifer.initializeCli()
-.then(Aquifer.initializeProject)
 .then(() => {
-  require('../lib/create.command')(Aquifer);
-  require('../lib/build.command')(Aquifer);
-  require('../lib/refresh.command')(Aquifer);
-  require('../lib/extension.command')(Aquifer);
-});
+  Aquifer.initializeProject()
+})
+.then(() => {
+  Aquifer.initializeCommands(Aquifer)
+})
 
-// If no arguments passed in, output cli docs. Else parse.
-if (!process.argv.slice(2).length) {
-  Aquifer.console.log(Aquifer.art + '\n', 'success');
-  if (Aquifer.initialized === false) {
-    Aquifer.console.log('To create a Drupal site, run: "aquifer create <sitename>"', 'notice');
+// Load the commands, and execute commander.
+.then(() => {
+  // If no arguments passed in, output cli docs. Else parse.
+  if (!process.argv.slice(2).length) {
+    Aquifer.console.log(Aquifer.art + '\n', 'success');
+    if (Aquifer.initialized === false) {
+      Aquifer.console.log('To create a Drupal site, run: "aquifer create <sitename>"', 'notice');
+    }
+
+    Aquifer.cli.outputHelp();
   }
+  else {
+    Aquifer.cli.parse(process.argv);
+  }
+})
 
-  Aquifer.cli.outputHelp();
-}
-else {
-  Aquifer.cli.parse(process.argv);
-}
+// Catch, and properly throw any errors.
+.catch((reason) => {
+  console.error(reason);
+});
