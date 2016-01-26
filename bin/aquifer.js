@@ -12,30 +12,28 @@
  *           |_|
  */
 
-const Aquifer = {};
-
-// Require and assign top-level APIs.
-Aquifer.console = require('../lib/console.api.js')(Aquifer);
-Aquifer.init = require('../lib/init.api.js')(Aquifer);
-
-// Require and assign other apis.
-Aquifer.api = {
-  project: require('../lib/project.api.js')(Aquifer),
-  build: require('../lib/build.api.js')(Aquifer),
-  refresh: require('../lib/refresh.api.js')(Aquifer),
-  extension: require('../lib/extension.api.js')(Aquifer)
+// Load Aquifer class and extend with libraries.
+const AquiferAPI = require('../lib/aquifer.api');
+AquiferAPI.prototype.console = require('../lib/console.api')(AquiferAPI);
+AquiferAPI.prototype.api = {
+  project: require('../lib/project.api')(AquiferAPI),
+  build: require('../lib/build.api')(AquiferAPI),
+  refresh: require('../lib/refresh.api')(AquiferAPI),
+  extension: require('../lib/extension.api')(AquiferAPI)
 }
 
-// Initialize Aquifer.
-Aquifer.init.setup();
+// Create instance of AquiferAPI.
+const Aquifer = new AquiferAPI();
 
-// Require and assign command files.
-Aquifer.command = {
-  create: require('../lib/create.command.js')(Aquifer),
-  build: require('../lib/build.command.js')(Aquifer),
-  refresh: require('../lib/refresh.command.js')(Aquifer),
-  extension: require('../lib/extension.command.js')(Aquifer)
-}
+// Initialize cli, and project.
+Aquifer.initializeCli()
+.then(Aquifer.initializeProject)
+.then(() => {
+  require('../lib/create.command')(Aquifer);
+  require('../lib/build.command')(Aquifer);
+  require('../lib/refresh.command')(Aquifer);
+  require('../lib/extension.command')(Aquifer);
+});
 
 // If no arguments passed in, output cli docs. Else parse.
 if (!process.argv.slice(2).length) {
