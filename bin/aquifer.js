@@ -27,16 +27,20 @@ AquiferAPI.prototype.api = {
 // Create instance of AquiferAPI.
 const Aquifer = new AquiferAPI();
 
-// Initialize cli, project, and commands
+// Initialize the command line interface.
 Aquifer.initializeCli()
+
+// Initialize the project, if cwd is an Aquifer project.
 .then(() => {
   Aquifer.initializeProject()
 })
+
+// Load and execute command definitions.
 .then(() => {
   Aquifer.initializeCommands(Aquifer)
 })
 
-// Load the commands, and execute commander.
+// Execute commander parser.
 .then(() => {
   // If no arguments passed in, output cli docs. Else parse.
   if (!process.argv.slice(2).length) {
