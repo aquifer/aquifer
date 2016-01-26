@@ -16,7 +16,9 @@
 
 // Load Aquifer class and extend with libraries.
 const AquiferAPI = require('../lib/aquifer.api');
-AquiferAPI.prototype.console = require('../lib/console.api')(AquiferAPI);
+const Console = require('../lib/console.api');
+
+AquiferAPI.prototype.console = new Console();
 AquiferAPI.prototype.api = {
   project: require('../lib/project.api')(AquiferAPI),
   build: require('../lib/build.api')(AquiferAPI),
@@ -54,6 +56,7 @@ Aquifer.initializeCli()
   else {
     Aquifer.cli.parse(process.argv);
   }
+
 })
 
 // Catch, and properly throw any errors.
