@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+
 /**
  * @file
  * Defines aquifer command line interface.
@@ -10,13 +11,14 @@
  *  \__,_|\__, |\__,_|_|_|  \___|_|
  *           |_|
  */
-/* globals require, process */
 
-var Aquifer = {};
+const Aquifer = {};
+
+// Require and assign top-level APIs.
 Aquifer.console = require('../lib/console.api.js')(Aquifer);
 Aquifer.init = require('../lib/init.api.js')(Aquifer);
 
-// APIs.
+// Require and assign other apis.
 Aquifer.api = {
   project: require('../lib/project.api.js')(Aquifer),
   build: require('../lib/build.api.js')(Aquifer),
@@ -24,10 +26,10 @@ Aquifer.api = {
   extension: require('../lib/extension.api.js')(Aquifer)
 }
 
-// Initialize.
+// Initialize Aquifer.
 Aquifer.init.setup();
 
-// Commands.
+// Require and assign command files.
 Aquifer.command = {
   create: require('../lib/create.command.js')(Aquifer),
   build: require('../lib/build.command.js')(Aquifer),
