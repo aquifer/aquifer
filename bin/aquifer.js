@@ -18,11 +18,12 @@
 const AquiferAPI = require('../lib/aquifer.api');
 const Console = require('../lib/console.api');
 const Project = require('../lib/project.api');
+const Build = require('../lib/build.api');
 
 AquiferAPI.prototype.console = new Console();
 AquiferAPI.prototype.api = {
   project: Project,
-  build: require('../lib/build.api')(AquiferAPI),
+  build: Build,
   refresh: require('../lib/refresh.api')(AquiferAPI),
   extension: require('../lib/extension.api')(AquiferAPI)
 }
