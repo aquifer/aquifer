@@ -64,4 +64,4 @@ Aquifer.initializeCli()
 // Catch, and properly throw any errors.
 .catch((reason) => {
   console.error(reason);
-});
+})
