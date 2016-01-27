@@ -36,12 +36,12 @@ Aquifer.initializeCli()
 
 // Initialize the project, if cwd is an Aquifer project.
 .then(() => {
-  Aquifer.initializeProject()
+  return Aquifer.initializeProject()
 })
 
 // Load and execute command definitions.
 .then(() => {
-  Aquifer.initializeCommands(Aquifer)
+  return Aquifer.initializeCommands(Aquifer)
 })
 
 // Execute commander parser.
@@ -58,7 +58,6 @@ Aquifer.initializeCli()
   else {
     Aquifer.cli.parse(process.argv);
   }
-
 })
 
 // Catch, and properly throw any errors.
