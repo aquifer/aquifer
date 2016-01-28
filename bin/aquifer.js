@@ -60,7 +60,7 @@ Aquifer.initializeCli()
   }
 
   // If arguments are passed, and are valid, parse.
-  else if (Aquifer.cli._events.hasOwnProperty(command)) {
+  else if (Aquifer.cli._events.hasOwnProperty(command[0])) {
     Aquifer.cli.parse(process.argv);
   }
 
