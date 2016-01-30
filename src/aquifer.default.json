@@ -45,5 +45,18 @@
     [
       "rr"
     ]
-  ]
+  ],
+  "environments": {
+    "local": {
+      "isRemote": true,
+      "host": "forcepoint.dev",
+      "port": "80",
+      "user": "vagrant",
+      "key": "~/.vagrant.d/insecure_private_key",
+      "paths": {
+        "build": "/var/www/forcepoint/build",
+        "aquifer": "/var/www/forcepoint"
+      }
+    }
+  }
 }
