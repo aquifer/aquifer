@@ -12,12 +12,16 @@ Aquifer is an npm module, installing it is relatively painless:
 * In your command line, run the following based on your environment:
 
 Linux:
-`sudo npm install -g aquifer npmdoctor`
-`sudo npmdoctor -u $(whoami)`
+```
+sudo npm install -g aquifer npmdoctor
+sudo npmdoctor -u $(whoami)
+```
 
 Mac OS X:
-`brew npm install -g aquifer`
-`brew npmdoctor -u $(whoami)`
+```
+brew npm install -g aquifer
+brew npmdoctor -u $(whoami)
+```
 
 Aquifer should now be installed!
 
