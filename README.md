@@ -9,7 +9,15 @@ Aquifer is an npm module, installing it is relatively painless:
 
 * Ensure that node.js and npm are installed. We recommend using [nvm](https://github.com/creationix/nvm) to do this.
 * Install [Drush](http://www.drush.org/en/master/install/). Aquifer is compatible with Drush 7.x and 6.x.
-* In your command line, run: `npm install -g aquifer`
+* In your command line, run the following based on your environment:
+
+Linux:
+`sudo npm install -g aquifer npmdoctor`
+`sudo npmdoctor -u $(whoami)`
+
+Mac OS X:
+`brew npm install -g aquifer`
+`brew npmdoctor -u $(whoami)`
 
 Aquifer should now be installed!
 
