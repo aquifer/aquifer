@@ -45,31 +45,12 @@ Aquifer.initializeCli()
 
 // Load and execute command definitions.
 .then(() => {
-  return Aquifer.initializeCommands(Aquifer)
+  return Aquifer.initializeCommands();
 })
 
 // Execute commander parser.
 .then(() => {
-  // If no arguments passed in, output cli docs.
-  let command = process.argv.slice(2);
-  if (!command.length) {
-    Aquifer.console.log(Aquifer.art + '\n', 'success');
-    if (Aquifer.initialized === false) {
-      Aquifer.console.log('To create a Drupal site, run: "aquifer create <sitename>"', 'notice');
-    }
-
-    Aquifer.cli.outputHelp();
-  }
-
-  // If arguments are passed, and are valid, parse.
-  else if (Aquifer.cli._events.hasOwnProperty(command[0])) {
-    Aquifer.cli.parse(process.argv);
-  }
-
-  // If arguments passed in are not parseable, error.
-  else {
-    Aquifer.console.log('"' + command + '" is an invalid command.', 'error', 127);
-  }
+  return Aquifer.parse();
 })
 
 // Catch, and properly throw any errors.
