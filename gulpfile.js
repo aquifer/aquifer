@@ -2,37 +2,34 @@
  * @file
  * Gulp tasks for this project.
  */
-/* globals require */
-
 'use strict';
 
-var gulp            = require('gulp'),
-    eslint          = require('gulp-eslint'),
-    jscs            = require('gulp-jscs'),
-    bump            = require('gulp-bump'),
-    jsFilePatterns  = [
-      'index.js',
-      'lib/*.js',
-      'lib/**/*.js'
-    ];
+const gulp   = require('gulp');
+const eslint = require('gulp-eslint');
+const bump   = require('gulp-bump');
+const jsFilePatterns  = [
+  'gulpfile.js',
+  'bin/*.js',
+  'lib/*.js',
+  'lib/**/*.js'
+];
 
 /**
  * @task lint
  *   Runs JSCS and JSLint on module, theme, and gulp files. Excludes all
  *   minified JavaScript files.
  */
-gulp.task('lint', function () {
+gulp.task('lint', () => {
   return gulp.src(jsFilePatterns)
   .pipe(eslint())
   .pipe(eslint.format())
-  .pipe(jscs());
 });
 
 /**
  * @task watch
  * Runs lint tasks when files are changed.
  */
-gulp.task('watch', function () {
+gulp.task('watch', () => {
   gulp.watch(jsFilePatterns, ['lint']);
 });
 
@@ -40,7 +37,7 @@ gulp.task('watch', function () {
  * @task bump-prerelease
  *   Increment Aquifer's prerelease version by 1.
  */
-gulp.task('bump-prerelease', function () {
+gulp.task('bump-prerelease', () => {
   gulp.src('./package.json')
   .pipe(bump({type: 'prerelease'}))
   .pipe(gulp.dest('./'));
@@ -50,7 +47,7 @@ gulp.task('bump-prerelease', function () {
  * @task bump-patch
  *   Increment Aquifer's patch version by 1.
  */
-gulp.task('bump-patch', function () {
+gulp.task('bump-patch', () => {
   gulp.src('./package.json')
   .pipe(bump({type: 'patch'}))
   .pipe(gulp.dest('./'));
@@ -60,7 +57,7 @@ gulp.task('bump-patch', function () {
  * @task bump-minor
  *   Increment Aquifer's minor version by 1.
  */
-gulp.task('bump-minor', function () {
+gulp.task('bump-minor', () => {
   gulp.src('./package.json')
   .pipe(bump({type: 'minor'}))
   .pipe(gulp.dest('./'));
@@ -70,7 +67,7 @@ gulp.task('bump-minor', function () {
  * @task bump-major
  *   Increment Aquifer's major version by 1.
  */
-gulp.task('bump-major', function () {
+gulp.task('bump-major', () => {
   gulp.src('./package.json')
   .pipe(bump({type: 'major'}))
   .pipe(gulp.dest('./'));

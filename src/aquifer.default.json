@@ -25,19 +25,19 @@
   "extensions": {},
   "refreshCommands": [
     [
-      "updb"
-    ],
-    [
-      "cc",
-      "all"
-    ],
-    [
       "en",
       "master"
     ],
     [
       "master-execute",
       "--scope=local"
+    ],
+    [
+      "updb"
+    ],
+    [
+      "cc",
+      "all"
     ],
     [
       "fra"
