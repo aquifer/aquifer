@@ -3,7 +3,9 @@
   "version": "0.1.4",
   "description": "Drupal build, test, and deployment CLI.",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test-unit": "node_modules/.bin/mocha test/unit/*",
+    "test-functional": "node_modules/.bin/mocha test/functional/*",
+    "test": "npm run test-unit && npm run test-functional",
     "lint": "node_modules/.bin/gulp lint --"
   },
   "repository": {
@@ -48,6 +50,9 @@
     "gulp": "^3.8.11",
     "gulp-bump": "^1.0.0",
     "gulp-eslint": "^1.0.0",
-    "gulp-jshint": "^1.10.0"
+    "gulp-jscs": "^1.5.1",
+    "gulp-jshint": "^1.10.0",
+    "mocha": "*",
+    "chai": "*"
   }
 }
