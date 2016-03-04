@@ -87,6 +87,6 @@ These humanoids (in alphabetical order) are responsible for creating and maintai
 
 ## Credits and usage
 
-**Aquifer** is a trademark of Four Kitchens, LLC. You are free to use the logo to promote the Aquifer product as long as you do not modify it in any way.
+**Aquifer** is a trademark of [Four Kitchens, LLC](http://fourkitchens.com). You are free to use the logo to promote the Aquifer product so long as you do not modify it in any way.
 
 Drupal is a [registered trademark](http://drupal.com/trademark) of [Dries Buytaert](http://buytaert.net/).
