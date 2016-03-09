@@ -18,4 +18,4 @@ $databases = array(
   ),
 );
 
-$drupal_hash_salt = '';
+$settings['hash_salt'] = '';
