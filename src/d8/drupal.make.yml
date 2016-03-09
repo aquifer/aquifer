@@ -11,8 +11,6 @@ projects:
     version: ~
   features:
     version: ~
-  features_extra:
-    version: ~
   field_group:
     version: ~
   panels:
