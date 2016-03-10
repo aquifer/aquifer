@@ -26,18 +26,10 @@
   "extensions": {},
   "refreshCommands": [
     [
-      "cim",
-      "--source=../drupal_configuration",
-      "--partial"
-    ],
-    [
       "updb"
     ],
     [
       "cr"
-    ],
-    [
-      "fra"
     ]
   ]
 }

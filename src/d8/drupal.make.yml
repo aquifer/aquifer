@@ -9,6 +9,8 @@ defaults:
 projects:
   drupal:
     version: ~
+  config_update:
+    version: ~
   features:
     version: ~
   field_group:
