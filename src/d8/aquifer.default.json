@@ -1,27 +1,44 @@
 {
   "name": false,
   "core": 8,
-  "paths": {
-    "make": "drupal.make.yml",
-    "lock": false,
-    "settings": "settings",
-    "build": "build",
-    "root": "root",
-    "drush": "drush",
-    "themes": {
-      "root": "themes",
-      "contrib": "themes/contrib",
-      "custom": "themes/custom"
+  "buildPaths": {
+    "root/*": {
+      "destination": "*",
+      "conflict": "overwrite"
     },
-    "modules": {
-      "root": "modules",
-      "contrib": "modules/contrib",
-      "custom": "modules/custom",
-      "features": "modules/features"
+    "profiles/*": {
+      "destination": "profiles/*",
+      "conflict": "overwrite"
+    },
+    "settings/*": {
+      "destination": "sites/default/*",
+      "conflict": "overwrite"
+    },
+    "drush/*": {
+      "destination": "drush/*",
+      "conflict": "fail"
+    },
+    "themes/custom": {
+      "destination": "sites/all/themes/custom",
+      "conflict": "fail"
+    },
+    "modules/custom": {
+      "destination": "modules/custom",
+      "conflict": "fail"
+    },
+    "modules/features": {
+      "destination": "modules/features",
+      "conflict": "fail"
     },
     "files": {
-      "root": "files"
+      "destination": "sites/default/files",
+      "conflict": "overwrite"
     }
+  },
+  "assetPaths": {
+    "make": "drupal.make.yml",
+    "build": "build",
+    "vendor": ".aquifer"
   },
   "extensions": {},
   "refreshCommands": [
