@@ -22,6 +22,10 @@
       "root": "files"
     }
   },
+  "run": {
+    "scripts": {
+    }
+  },
   "extensions": {},
   "refreshCommands": [
     [
