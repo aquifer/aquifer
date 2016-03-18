@@ -1,0 +1,23 @@
+core: 8.x
+api: 2
+
+# Common attributes.
+defaults:
+  projects:
+    subdir: "contrib"
+
+projects:
+  drupal:
+    version: ~
+  config_update:
+    version: ~
+  features:
+    version: ~
+  field_group:
+    version: ~
+  panels:
+    version: ~
+  pathauto:
+    version: ~
+  token:
+    version: ~

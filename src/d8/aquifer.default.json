@@ -1,7 +1,9 @@
 {
   "name": false,
+  "core": 8,
   "paths": {
     "make": "drupal.make.yml",
+    "lock": false,
     "settings": "settings",
     "build": "build",
     "root": "root",
@@ -24,27 +26,10 @@
   "extensions": {},
   "refreshCommands": [
     [
-      "en",
-      "master"
-    ],
-    [
-      "master-execute",
-      "--scope=local"
-    ],
-    [
       "updb"
     ],
     [
-      "cc",
-      "all"
-    ],
-    [
-      "fra"
-    ],
-    [
-      "rr"
+      "cr"
     ]
-  ],
-  "environments": {
-  }
+  ]
 }
