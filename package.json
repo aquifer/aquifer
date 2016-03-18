@@ -43,6 +43,7 @@
     "inquirer": "^0.11.4",
     "jsonfile": "^2.0.0",
     "lodash": "^3.6.0",
+    "parse-spawn-args": "^1.0.2",
     "path": "^0.11.14",
     "ssh2": "^0.4.13",
     "touch": "0.0.3",
