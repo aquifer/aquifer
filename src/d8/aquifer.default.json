@@ -25,15 +25,11 @@
   },
   "run": {
     "scripts": {
+      "refresh": [
+        "drush updb -y",
+        "drush cr -y"
+      ]
     }
   },
   "extensions": {},
-  "refreshCommands": [
-    [
-      "updb"
-    ],
-    [
-      "cr"
-    ]
-  ]
 }
