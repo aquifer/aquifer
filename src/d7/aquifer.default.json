@@ -22,30 +22,20 @@
       "root": "files"
     }
   },
+  "run": {
+    "scripts": {
+      "refresh": [
+        "drush rr",
+        "drush cc drush",
+        "drush en -y master",
+        "drush master-execute -y --scope=local",
+        "drush updb -y",
+        "drush fra -y",
+        "drush cc drush"
+      ]
+    }
+  },
   "extensions": {},
-  "refreshCommands": [
-    [
-      "en",
-      "master"
-    ],
-    [
-      "master-execute",
-      "--scope=local"
-    ],
-    [
-      "updb"
-    ],
-    [
-      "cc",
-      "all"
-    ],
-    [
-      "fra"
-    ],
-    [
-      "rr"
-    ]
-  ],
   "environments": {
   }
 }
