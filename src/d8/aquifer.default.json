@@ -22,9 +22,9 @@
     "files": {
       "root": "files"
     },
-    "config_directories": {
+    "configDirectories": {
       "root": "config",
-      "buildconfig": "sites/default/config",
+      "buildConfig": "sites/default/config",
       "base": "config/base"
     }
   },
