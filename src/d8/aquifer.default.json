@@ -21,6 +21,11 @@
     },
     "files": {
       "root": "files"
+    },
+    "configDirectories": {
+      "root": "config",
+      "buildConfig": "sites/default/config",
+      "base": "config/base"
     }
   },
   "run": {
