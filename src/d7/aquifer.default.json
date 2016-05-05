@@ -1,10 +1,13 @@
 {
   "name": false,
   "core": 7,
+  "build": {
+    "method": "drush make",
+    "directory": "build",
+    "makeFile": "drupal.make.yml"
+  },
   "paths": {
-    "make": "drupal.make.yml",
     "settings": "settings",
-    "build": "build",
     "root": "root",
     "drush": "drush",
     "themes": {

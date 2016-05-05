@@ -1,9 +1,12 @@
 {
   "name": false,
   "core": 8,
+  "build": {
+    "method": "drush make",
+    "directory": "build",
+    "makeFile": "drupal.make.yml"
+  },
   "paths": {
-    "make": "drupal.make.yml",
-    "lock": false,
     "settings": "settings",
     "build": "build",
     "root": "root",
