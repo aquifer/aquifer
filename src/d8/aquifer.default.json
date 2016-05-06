@@ -3,24 +3,52 @@
   "core": 8,
   "paths": {
     "make": "drupal.make.yml",
-    "lock": false,
-    "settings": "settings",
-    "build": "build",
-    "root": "root",
-    "drush": "drush",
-    "themes": {
-      "root": "themes",
-      "contrib": "themes/contrib",
-      "custom": "themes/custom"
-    },
-    "modules": {
-      "root": "modules",
-      "contrib": "modules/contrib",
-      "custom": "modules/custom",
-      "features": "modules/features"
+    "build": "build"
+  },
+  "sync": {
+    "directories": {
+      "modules/custom": {
+        "destination": "modules/custom",
+        "method": "symlink",
+        "conflict": "overwrite"
+      },
+      "themes/custom": {
+        "destination": "themes/custom",
+        "method": "symlink",
+        "conflict": "overwrite"
+      },
+      "files": {
+        "destination": "sites/default/files",
+        "method": "symlink",
+        "conflict": "overwrite"
+      }
     },
     "files": {
-      "root": "files"
+      "root/.htaccess": {
+        "destination": ".htaccess",
+        "method": "symlink",
+        "conflict": "overwrite"
+      },
+      "root/robots.txt": {
+        "destination": "robots.txt",
+        "method": "symlink",
+        "conflict": "overwrite"
+      },
+      "settings/settings.php": {
+        "destination": "sites/default/settings.php",
+        "method": "symlink",
+        "conflict": "overwrite"
+      },
+      "settings/secret.settings.php": {
+        "destination": "sites/default/secret.settings.php",
+        "method": "symlink",
+        "conflict": "overwrite"
+      },
+      "settings/local.settings.php": {
+        "destination": "sites/default/local.settings.php",
+        "method": "symlink",
+        "conflict": "overwrite"
+      }
     }
   },
   "run": {
