@@ -1,18 +1,20 @@
+## New aquifer.json directory configuration
+
+The configuration for Drupal directories in `aquifer.json` has changed.
+
+The new default configuration looks something like this:
+
+```
 {
-  "name": false,
+  "name": "aquifer-d8",
   "core": 8,
-  "build": {
-    "method": "drush make",
-    "directory": "build",
-    "makeFile": "drupal.make.yml"
+  "paths": {
+    "make": "drupal.make.yml",
+    "lock": false,
+    "build": "build"
   },
   "sync": {
     "directories": {
-      "root": {
-        "destination": "",
-        "method": "symlink",
-        "conflict": "overwrite"
-      },
       "modules/custom": {
         "destination": "modules/custom",
         "method": "symlink",
@@ -30,6 +32,16 @@
       }
     },
     "files": {
+      "root/.htaccess": {
+        "destination": ".htaccess",
+        "method": "symlink",
+        "conflict": "overwrite"
+      },
+      "root/robots.txt": {
+        "destination": "robots.txt",
+        "method": "symlink",
+        "conflict": "overwrite"
+      },
       "settings/settings.php": {
         "destination": "sites/default/settings.php",
         "method": "symlink",
@@ -57,3 +69,8 @@
   },
   "extensions": {}
 }
+```
+
+Note that many of the directories previously defined in the `paths` object are now configured in the `sync` object. 
+
+Projects created with older versions of Aquifer will need to modify their `aquifer.json` configuration to reflect this new format relative to the directories and files they are syncing into the build.
