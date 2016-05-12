@@ -7,6 +7,11 @@
   },
   "sync": {
     "directories": {
+      "root": {
+        "destination": "",
+        "method": "symlink",
+        "conflict": "overwrite"
+      },
       "modules/custom": {
         "destination": "modules/custom",
         "method": "symlink",
@@ -24,16 +29,6 @@
       }
     },
     "files": {
-      "root/.htaccess": {
-        "destination": ".htaccess",
-        "method": "symlink",
-        "conflict": "overwrite"
-      },
-      "root/robots.txt": {
-        "destination": "robots.txt",
-        "method": "symlink",
-        "conflict": "overwrite"
-      },
       "settings/settings.php": {
         "destination": "sites/default/settings.php",
         "method": "symlink",
