@@ -13,15 +13,19 @@ use Symfony\Component\Filesystem\Filesystem;
 class ScriptHandler {
 
   protected static function getDrupalRoot($project_root) {
-    $drupal_root = 'build';
     // Get config from aquifer.json.
     $json = file_get_contents($project_root . '/aquifer.json');
     $json_array = json_decode($json, TRUE);
 
-    if (!empty($json_array)
-      && isset($json_array['build'])
-      && isset($json_array['build']['directory'])) {
-      $drupal_root = $json_array['build']['directory'];
+    if (!$drupal_root = getenv('AQUIFER_DRUPAL_ROOT')) {
+      if (!empty($json_array)
+        && isset($json_array['build'])
+        && isset($json_array['build']['directory'])) {
+        $drupal_root = $json_array['build']['directory'];
+      }
+      else {
+        $drupal_root = 'build';
+      }
     }
 
     return $project_root . '/' . $drupal_root;
