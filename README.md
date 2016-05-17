@@ -72,6 +72,8 @@ Edit the `aquifer.json` file in your project root and change the `build` object 
 
 Now `aquifer build` will use Composer to build the site instead of Drush make.
 
+Note that if you wnat to change the `build.directory` property in `aquifer.json` to something else, you will also need to edit `composer.json` and alter any paths there to incorporate your new build directory value.
+
 ### 3. Adding contrib modules
 
 To add contrib modules to your project, simply edit the `drupal.make.yml` file and add your contrib modules there. To learn more about Drush Make, see http://www.drush.org/en/master/make/
