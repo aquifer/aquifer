@@ -56,7 +56,21 @@ Aquifer projects build into a Drupal site root in the `build` directory. To buil
 aquifer build
 ```
 
-This command will use Drush make and other tools to construct a Drupal site root, which will now be located in the `build` folder, or whatever folder is specified in `aquifer.json` in the `build` property.
+This command will use Drush make and other tools to construct a Drupal site root, which will now be located in the `build` folder, or whatever folder is specified in `aquifer.json` in the `build` object's `directory` property.
+
+**Using Composer** (Drupal 8 support only)
+
+Edit the `aquifer.json` file in your project root and change the `build` object to look like this:
+
+```
+"build": {
+  "method": "composer",
+  "directory": "build",
+  "makeFile": "composer.json"
+}
+```
+
+Now running `aquifer build` will use Composer to build the site instead of Druah make.
 
 ### 3. Adding contrib modules
 

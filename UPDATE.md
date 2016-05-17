@@ -6,15 +6,20 @@ The new default configuration looks something like this:
 
 ```
 {
-  "name": "aquifer-d8",
+  "name": false,
   "core": 8,
-  "paths": {
-    "make": "drupal.make.yml",
-    "lock": false,
-    "build": "build"
+  "build": {
+    "method": "drush make",
+    "directory": "build",
+    "makeFile": "drupal.make.yml"
   },
   "sync": {
     "directories": {
+      "root": {
+        "destination": "",
+        "method": "symlink",
+        "conflict": "overwrite"
+      },
       "modules/custom": {
         "destination": "modules/custom",
         "method": "symlink",
@@ -32,16 +37,6 @@ The new default configuration looks something like this:
       }
     },
     "files": {
-      "root/.htaccess": {
-        "destination": ".htaccess",
-        "method": "symlink",
-        "conflict": "overwrite"
-      },
-      "root/robots.txt": {
-        "destination": "robots.txt",
-        "method": "symlink",
-        "conflict": "overwrite"
-      },
       "settings/settings.php": {
         "destination": "sites/default/settings.php",
         "method": "symlink",
