@@ -70,7 +70,7 @@ Edit the `aquifer.json` file in your project root and change the `build` object 
 }
 ```
 
-Now running `aquifer build` will use Composer to build the site instead of Druah make.
+Now `aquifer build` will use Composer to build the site instead of Drush make.
 
 ### 3. Adding contrib modules
 
