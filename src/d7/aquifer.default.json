@@ -33,7 +33,8 @@
         "drush fra -y",
         "drush cc drush"
       ]
-    }
+    },
+    "postBuild": []
   },
   "extensions": {},
   "environments": {
