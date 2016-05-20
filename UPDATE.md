@@ -1,3 +1,10 @@
+## New aquifer.json directory configuration
+
+The configuration for Drupal directories in `aquifer.json` has changed.
+
+The new default configuration looks something like this:
+
+```
 {
   "name": false,
   "core": 8,
@@ -57,3 +64,8 @@
   },
   "extensions": {}
 }
+```
+
+Note that many of the directories previously defined in the `paths` object are now configured in the `sync` object. 
+
+Projects created with older versions of Aquifer will need to modify their `aquifer.json` configuration to reflect this new format relative to the directories and files they are syncing into the build.
