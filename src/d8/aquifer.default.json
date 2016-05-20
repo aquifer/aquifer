@@ -53,7 +53,8 @@
         "drush updb -y",
         "drush cr -y"
       ]
-    }
+    },
+    "postBuild": []
   },
   "extensions": {}
 }
