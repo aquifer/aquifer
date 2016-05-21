@@ -1,4 +1,4 @@
-# Contributing code
+# Contributing to Aquifer
 This document describes the workflow that Aquifer adheres to in regards to contributing code, submitting issues, and reviewing pull requests.
 
 ## GitHub Issues
