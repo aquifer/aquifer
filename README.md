@@ -10,7 +10,7 @@ Aquifer is an npm module, installing it is relatively painless:
 * Ensure that the latest version of Node.js and npm are installed. We recommend using [nvm](https://github.com/creationix/nvm) to do this.
 * Install [Drush](http://www.drush.org/en/master/install/). Aquifer is compatible with Drush 7.x and 6.x.
 * In your command line, run: `npm install -g aquifer`
-* There is currently a beta release which contains significant updates. To install this beta, run: `npm install -g aquifer/aquifer#1.0.0-beta1`
+* To install the Aquifer beta instead, run: `npm install -g aquifer@1.0.0-beta1`
 
 Aquifer should now be installed!
 
@@ -56,7 +56,23 @@ Aquifer projects build into a Drupal site root in the `build` directory. To buil
 aquifer build
 ```
 
-This command will use Drush make and other tools to construct a Drupal site root, which will now be located in the `build` folder, or whatever folder is specified in `aquifer.json` in the `build` property.
+This command will use Drush make and other tools to construct a Drupal site root, which will now be located in the `build` folder, or whatever folder is specified in `aquifer.json` in the `build` object's `directory` property.
+
+**Using Composer** (Drupal 8 support only)
+
+Edit the `aquifer.json` file in your project root and change the `build` object to look like this:
+
+```
+"build": {
+  "method": "composer",
+  "directory": "build",
+  "makeFile": "composer.json"
+}
+```
+
+Now `aquifer build` will use Composer to build the site instead of Drush make.
+
+Note that if you wnat to change the `build.directory` property in `aquifer.json` to something else, you will also need to edit `composer.json` and alter any paths there to incorporate your new build directory value.
 
 ### 3. Adding contrib modules
 

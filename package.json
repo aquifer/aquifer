@@ -38,23 +38,24 @@
     "chalk": "^1.0.0",
     "commander": "^2.7.1",
     "del": "^1.2.1",
-    "fs-extra": "^0.18.0",
+    "fs-extra": "^0.30.0",
     "inquirer": "^0.11.4",
     "jsonfile": "^2.0.0",
     "lodash": "^3.6.0",
     "parse-spawn-args": "^1.0.2",
     "path": "^0.11.14",
+    "replace": "^0.3.0",
     "ssh2": "^0.4.13",
     "touch": "0.0.3",
     "untildify": "^2.1.0"
   },
   "devDependencies": {
+    "chai": "*",
     "gulp": "^3.8.11",
     "gulp-bump": "^1.0.0",
     "gulp-eslint": "^1.0.0",
     "gulp-jscs": "^1.5.1",
     "gulp-jshint": "^1.10.0",
-    "mocha": "*",
-    "chai": "*"
+    "mocha": "*"
   }
 }
