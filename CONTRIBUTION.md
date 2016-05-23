@@ -2,7 +2,7 @@
 This document describes the workflow that Aquifer adheres to in regards to contributing code, submitting issues, and reviewing pull requests.
 
 ## GitHub Issues
-Aquifer uses GitHub Issues to keep track of bugs, features, and tasks. If you would like to report a bug or request a feature, please create a GitHub issue and include the following information, depending on the type of issue.
+Aquifer uses GitHub issues to keep track of bugs, features, and tasks. If you would like to report a bug or request a feature, please create a GitHub issue and include the following information, depending on the type of issue.
 
 ### Reporting a bug
 Create a GitHub issue with the "bug" label, and include the following information:
