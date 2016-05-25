@@ -13,6 +13,11 @@
         "method": "symlink",
         "conflict": "overwrite"
       },
+      "modules/contrib": {
+        "destination": "sites/all/modules/contrib",
+        "method": "symlink",
+        "conflict": "overwrite"
+      },
       "modules/custom": {
         "destination": "sites/all/modules/custom",
         "method": "symlink",
@@ -20,6 +25,11 @@
       },
       "modules/features": {
         "destination": "sites/all/modules/features",
+        "method": "symlink",
+        "conflict": "overwrite"
+      },
+      "themes/contrib": {
+        "destination": "sites/all/themes/contrib",
         "method": "symlink",
         "conflict": "overwrite"
       },
