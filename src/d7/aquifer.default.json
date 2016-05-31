@@ -24,7 +24,7 @@
         "conflict": "overwrite"
       },
       "themes/custom": {
-        "destination": "themes/custom",
+        "destination": "sites/all/themes/custom",
         "method": "symlink",
         "conflict": "overwrite"
       },
