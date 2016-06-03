@@ -1,4 +1,23 @@
-## New aquifer.json directory configuration
+## [2016-06-02] Run `composer install` inside build directory
+
+Performs Composer build by copying `composer.json`, `composer.lock`, and `/scripts/composer` into the build directory and runs `composer install` from withing the build directory.
+
+This makes `aquifer build` using composer more flexible and able to work with alternative build directories such as those creates bu `aquifer-git`.
+
+This will break projects that have the build directory prepended to their `vendor-dir` and `installer-paths` settings in `composer.json`. Those settings should be reconfigured to be relative to the project build directory.
+
+You will also need to add the add a `build.scriptsDir` property to your `aquifer.json` file:
+
+```
+"build": {
+  "method": "composer",
+  "directory": "build",
+  "makeFile": "composer.json",
+  "scriptsDir": "scripts/composer"
+}
+```
+
+## [2016-05-17] New aquifer.json directory configuration
 
 The configuration for Drupal directories in `aquifer.json` has changed.
 
