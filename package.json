@@ -44,7 +44,6 @@
     "lodash": "^3.6.0",
     "parse-spawn-args": "^1.0.2",
     "path": "^0.11.14",
-    "replace": "^0.3.0",
     "ssh2": "^0.4.13",
     "touch": "0.0.3",
     "untildify": "^2.1.0"
