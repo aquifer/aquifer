@@ -66,7 +66,8 @@ Edit the `aquifer.json` file in your project root and change the `build` object 
 "build": {
   "method": "composer",
   "directory": "build",
-  "makeFile": "composer.json"
+  "makeFile": "composer.json",
+  "scriptsDir": "scripts/composer"
 }
 ```
 

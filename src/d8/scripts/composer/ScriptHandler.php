@@ -13,11 +13,24 @@ use Symfony\Component\Filesystem\Filesystem;
 class ScriptHandler {
 
   protected static function getDrupalRoot($project_root) {
-    // Get config from aquifer.json.
-    $json = file_get_contents($project_root . '/aquifer.json');
-    $json_array = json_decode($json, TRUE);
+    $fs = new Filesystem();
 
+    // Allow environment variable to override project root.
+    if (getenv('AQUIFER_PROJECT_ROOT')) {
+      $project_root = getenv('AQUIFER_PROJECT_ROOT');
+    }
+
+    // Allow environment variable to override Drupal root.
     if (!$drupal_root = getenv('AQUIFER_DRUPAL_ROOT')) {
+      $json_array = FALSE;
+
+      // Get build directory from aquifer.json.
+      if ($fs->exists($project_root . '/aquifer.json')) {
+        // Get config from aquifer.json.
+        $json = file_get_contents($project_root . '/aquifer.json');
+        $json_array = json_decode($json, TRUE);
+      }
+
       if (!empty($json_array)
         && isset($json_array['build'])
         && isset($json_array['build']['directory'])) {
