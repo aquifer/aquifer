@@ -78,6 +78,7 @@
         "drush cc drush"
       ]
     },
+    "preSync": [],
     "postBuild": []
   },
   "extensions": {},
