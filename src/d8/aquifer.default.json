@@ -7,6 +7,29 @@
     "makeFile": "drupal.make.yml"
   },
   "sync": {
+    "scripts/composer/drupal": {
+      "destination": "scripts/composer",
+      "method": "symlink",
+      "conflict": "overwrite",
+      "type": "file",
+      "hook": "preBuild",
+      "required": true
+    },
+    "drupal.composer.json": {
+      "destination": "composer.json",
+      "method": "copy",
+      "conflict": "overwrite",
+      "type": "file",
+      "hook": "preBuild",
+      "required": true
+    },
+    "drupal.composer.lock": {
+      "destination": "composer.lock",
+      "method": "copy",
+      "conflict": "overwrite",
+      "type": "file",
+      "hook": "preBuild"
+    },
     "root": {
       "destination": "",
       "method": "symlink",
