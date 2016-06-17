@@ -15,7 +15,7 @@
       "hook": "preBuild",
       "required": true
     },
-    "drupal.composer.json": {
+    "root/composer.json": {
       "destination": "composer.json",
       "method": "symlink",
       "conflict": "overwrite",
@@ -23,7 +23,7 @@
       "hook": "preBuild",
       "required": true
     },
-    "drupal.composer.lock": {
+    "root/composer.lock": {
       "destination": "composer.lock",
       "method": "symlink",
       "conflict": "overwrite",
