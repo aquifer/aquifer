@@ -17,7 +17,7 @@
     },
     "drupal.composer.json": {
       "destination": "composer.json",
-      "method": "copy",
+      "method": "symlink",
       "conflict": "overwrite",
       "type": "file",
       "hook": "preBuild",
@@ -25,7 +25,7 @@
     },
     "drupal.composer.lock": {
       "destination": "composer.lock",
-      "method": "copy",
+      "method": "symlink",
       "conflict": "overwrite",
       "type": "file",
       "hook": "preBuild"
