@@ -22,6 +22,7 @@ const Build = require('../lib/build.api');
 const Run = require('../lib/run.api');
 const Extension = require('../lib/extension.api');
 const Environment = require('../lib/environment.api');
+const Sync = require('../lib/sync.api');
 
 AquiferAPI.prototype.console = new Console();
 AquiferAPI.prototype.api = {
@@ -29,7 +30,8 @@ AquiferAPI.prototype.api = {
   build: Build,
   run: Run,
   extension: Extension,
-  environment: Environment
+  environment: Environment,
+  sync: Sync
 }
 
 // Create instance of AquiferAPI.

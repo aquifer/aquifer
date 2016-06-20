@@ -46,23 +46,21 @@
     "scripts": {
         "drupal-scaffold": "DrupalComposer\\DrupalScaffold\\Plugin::scaffold",
         "post-install-cmd": [
-            "DrupalProject\\composer\\ScriptHandler::buildScaffold",
-            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
+            "DrupalProject\\composer\\ScriptHandler::buildScaffold"
         ],
         "post-update-cmd": [
-            "DrupalProject\\composer\\ScriptHandler::buildScaffold",
-            "DrupalProject\\composer\\ScriptHandler::createRequiredFiles"
+            "DrupalProject\\composer\\ScriptHandler::buildScaffold"
         ]
     },
     "config": {
-        "vendor-dir": "build/vendor"
+        "vendor-dir": "vendor"
     },
     "extra": {
         "installer-paths": {
-            "build/core": ["type:drupal-core"],
-            "build/modules/contrib/{$name}": ["type:drupal-module"],
-            "build/profiles/contrib/{$name}": ["type:drupal-profile"],
-            "build/themes/contrib/{$name}": ["type:drupal-theme"],
+            "core": ["type:drupal-core"],
+            "modules/contrib/{$name}": ["type:drupal-module"],
+            "profiles/contrib/{$name}": ["type:drupal-profile"],
+            "themes/contrib/{$name}": ["type:drupal-theme"],
             "drush/contrib/{$name}": ["type:drupal-drush"]
         }
     }
