@@ -28,7 +28,8 @@
       "method": "symlink",
       "conflict": "overwrite",
       "type": "file",
-      "hook": "preBuild"
+      "hook": "preBuild",
+      "required": true
     },
     "root": {
       "destination": "",
