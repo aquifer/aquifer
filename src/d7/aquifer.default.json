@@ -4,7 +4,8 @@
   "build": {
     "method": "drush make",
     "directory": "build",
-    "makeFile": "drupal.make.yml"
+    "makeFile": "drupal.make.yml",
+    "options": []
   },
   "sync": {
     "root": {
