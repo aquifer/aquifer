@@ -69,12 +69,7 @@ Edit the `aquifer.json` file in your project root and change the `build` object 
   "makeFile": "composer.json"
 }
 ```
-
-Now `aquifer build` will use Composer to build the site instead of Drush make.
-
-Note that if you wnat to change the `build.directory` property in `aquifer.json` to something else, you will also need to edit `composer.json` and alter any paths there to incorporate your new build directory value.
-
-### 3. Adding contrib modules
+Now `aquifer build` will use Composer to build the site instead of Drush make.  Note that if you wnat to change the `build.directory` property in `aquifer.json` to something else, you will also need to edit `composer.json` and alter any paths there to incorporate your new build directory value.  ### 3. Adding contrib modules
 
 To add contrib modules to your project, simply edit the `drupal.make.yml` file and add your contrib modules there. To learn more about Drush Make, see http://www.drush.org/en/master/make/
 
@@ -112,6 +107,6 @@ These humanoids (in alphabetical order) are responsible for creating and maintai
 
 ## Credits and usage
 
-**Aquifer** is a trademark of Four Kitchens, LLC. You are free to use the logo to promote the Aquifer product as long as you do not modify it in any way.
++**Aquifer** is a trademark of [Four Kitchens, LLC](http://fourkitchens.com). You are free to use the logo to promote the Aquifer product so long as you do not modify it in any way.
 
 Drupal is a [registered trademark](http://drupal.com/trademark) of [Dries Buytaert](http://buytaert.net/).
