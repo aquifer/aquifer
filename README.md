@@ -2,6 +2,12 @@
 
 Aquifer is a command line interface that makes it easy to scaffold, build, test, and deploy your Drupal websites. It provides a default set of tools that allow you to develop, and build Drupal sites using the Drush-make workflow. In addition, Aquifer ships with an extensions system that allows you to add additional tools to your project.
 
+## Supported Software
+
+| Aquifer Version | Node Version |
+|-----------------|-------------:|
+| 1.0.0           |    >= 4.5.0  |
+| 1.0.0-beta2     |    >= 4.5.0  |
 
 ## Installation
 
