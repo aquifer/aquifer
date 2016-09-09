@@ -20,6 +20,7 @@ const Console = require('../lib/console.api');
 const Project = require('../lib/project.api');
 const Build = require('../lib/build.api');
 const Run = require('../lib/run.api');
+const Npm = require('../lib/npm.api');
 const Extension = require('../lib/extension.api');
 const Environment = require('../lib/environment.api');
 
@@ -28,6 +29,7 @@ AquiferAPI.prototype.api = {
   project: Project,
   build: Build,
   run: Run,
+  npm: Npm,
   extension: Extension,
   environment: Environment
 }
