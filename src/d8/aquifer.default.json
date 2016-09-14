@@ -54,6 +54,7 @@
         "drush cr -y"
       ]
     },
+    "preSync": [],
     "postBuild": []
   },
   "extensions": {}
