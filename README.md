@@ -45,11 +45,11 @@ To create an Aquifer-based Drupal project, run the following command:
 aquifer create mySiteName
 ```
 
-By default, a Drupal 7 build is implied. To create a newer Drupal 8 project, run
+By default, a Drupal 8 build is implied. To create a Drupal 7 project, run
 the following command:
 
 ```bash
-aquifer create mySiteName -d 8
+aquifer create mySiteName -d 7
 ```
 
 The `mySiteName` directory will now contain an Aquifer project with an number of files/folders. For information on what each file and folder is, checkout [this document in the wiki](https://github.com/aquifer/aquifer/wiki/Aquifer-project-directories).
