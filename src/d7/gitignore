@@ -16,7 +16,3 @@ local.settings.php
 
 .aquifer/node_modules
 aquifer.local.json
-
-.DS_Store
-Thumbs.db
-*.sql
