@@ -15,3 +15,4 @@ secret.settings.php
 local.settings.php
 
 .aquifer/node_modules
+aquifer.local.json
