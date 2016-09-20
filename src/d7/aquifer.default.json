@@ -43,27 +43,14 @@
       "type": "dir",
       "hook": "postBuild"
     },
-    "settings/settings.php": {
-      "destination": "sites/default/settings.php",
+    "settings": {
+      "destination": "sites/default",
       "method": "symlink",
       "conflict": "overwrite",
       "type": "file",
       "hook": "postBuild",
-      "required": true
-    },
-    "settings/secret.settings.php": {
-      "destination": "sites/default/secret.settings.php",
-      "method": "symlink",
-      "conflict": "overwrite",
-      "type": "file",
-      "hook": "postBuild"
-    },
-    "settings/local.settings.php": {
-      "destination": "sites/default/local.settings.php",
-      "method": "symlink",
-      "conflict": "overwrite",
-      "type": "file",
-      "hook": "postBuild"
+      "required": true,
+      "contents": true
     }
   },
   "run": {
