@@ -13,7 +13,8 @@
       "conflict": "overwrite",
       "type": "dir",
       "hook": "postBuild",
-      "required": true
+      "required": true,
+      "contents": true
     },
     "modules/custom": {
       "destination": "modules/custom",

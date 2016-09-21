@@ -19,7 +19,8 @@ The new default configuration looks something like this:
       "method": "symlink",
       "conflict": "overwrite",
       "type": "dir",
-      "hook": "postBuild"
+      "hook": "postBuild",
+      "contents": true
     },
     "modules/custom": {
       "destination": "modules/custom",
@@ -42,26 +43,14 @@ The new default configuration looks something like this:
       "type": "dir",
       "hook": "postBuild"
     },
-    "settings/settings.php": {
-      "destination": "sites/default/settings.php",
+    "settings": {
+      "destination": "sites/default",
       "method": "symlink",
       "conflict": "overwrite",
       "type": "file",
-      "hook": "postBuild"
-    },
-    "settings/secret.settings.php": {
-      "destination": "sites/default/secret.settings.php",
-      "method": "symlink",
-      "conflict": "overwrite",
-      "type": "file",
-      "hook": "postBuild"
-    },
-    "settings/local.settings.php": {
-      "destination": "sites/default/local.settings.php",
-      "method": "symlink",
-      "conflict": "overwrite",
-      "type": "file",
-      "hook": "postBuild"
+      "hook": "postBuild",
+      "required": true,
+      "contents": true
     }
   },
   "run": {
