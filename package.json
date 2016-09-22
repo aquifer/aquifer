@@ -24,12 +24,6 @@
     "url": "https://github.com/aquifer/aquifer/issues"
   },
   "license": "GPL-2.0",
-  "licenses": [
-    {
-      "type": "GPL-2.0",
-      "url": "https://github.com/aquifer/aquifer/blob/master/LICENSE"
-    }
-  ],
   "bin": {
     "aquifer": "./bin/aquifer.js"
   },
