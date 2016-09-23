@@ -21,21 +21,24 @@
       "method": "symlink",
       "conflict": "overwrite",
       "type": "dir",
-      "hook": "postBuild"
+      "hook": "postBuild",
+      "required": true
     },
     "themes/custom": {
       "destination": "themes/custom",
       "method": "symlink",
       "conflict": "overwrite",
       "type": "dir",
-      "hook": "postBuild"
+      "hook": "postBuild",
+      "required": true
     },
     "files": {
       "destination": "sites/default/files",
       "method": "symlink",
       "conflict": "overwrite",
       "type": "dir",
-      "hook": "postBuild"
+      "hook": "postBuild",
+      "required": true
     },
     "settings": {
       "destination": "sites/default",
