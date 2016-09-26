@@ -3,17 +3,9 @@
  * @file
  * Drupal site-specific configuration file.
  */
+
 $databases = array();
 
-/**
- * Include secret configuration.
- *
- * Contains database settings and other sensitive environment specific
- * information that shouldn't be in version control.
- */
-if (file_exists(DRUPAL_ROOT . '/sites/default/secret.settings.php')) {
-  include DRUPAL_ROOT . '/sites/default/secret.settings.php';
-}
 $config_directories = array();
 $settings['update_free_access'] = FALSE;
 $config['system.performance']['fast_404']['exclude_paths'] = '/\/(?:styles)|(?:system\/files)\//';
@@ -31,5 +23,5 @@ ini_set('session.cookie_lifetime', 2000000);
  * IMPORTANT: This block should remain at the bottom of this file.
  */
 if (file_exists(DRUPAL_ROOT . '/sites/default/local.settings.php')) {
-  include DRUPAL_ROOT . '/sites/default/local.settings.php';
+  include DRUPAL_ROOT . '/sites/default/settings.local.php';
 }

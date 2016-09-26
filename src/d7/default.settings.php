@@ -5,16 +5,6 @@
  */
 
 /**
- * Include secret configuration.
- *
- * Contains database settings and other sensitive environment specific
- * information that shouldn't be in version control.
- */
-if (file_exists(DRUPAL_ROOT . '/sites/default/secret.settings.php')) {
-  include DRUPAL_ROOT . '/sites/default/secret.settings.php';
-}
-
-/**
  * Master module configuration.
  * @see https://www.drupal.org/project/master
  */
@@ -88,5 +78,5 @@ $conf['404_fast_html'] = '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
  * IMPORTANT: This block should remain at the bottom of this file.
  */
 if (file_exists(DRUPAL_ROOT . '/sites/default/local.settings.php')) {
-  include DRUPAL_ROOT . '/sites/default/local.settings.php';
+  include DRUPAL_ROOT . '/sites/default/settings.local.php';
 }
