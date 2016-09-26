@@ -14,44 +14,43 @@ The new default configuration looks something like this:
     "makeFile": "drupal.make.yml"
   },
   "sync": {
-    "directories": {
-      "root": {
-        "destination": "",
-        "method": "symlink",
-        "conflict": "overwrite"
-      },
-      "modules/custom": {
-        "destination": "modules/custom",
-        "method": "symlink",
-        "conflict": "overwrite"
-      },
-      "themes/custom": {
-        "destination": "themes/custom",
-        "method": "symlink",
-        "conflict": "overwrite"
-      },
-      "files": {
-        "destination": "sites/default/files",
-        "method": "symlink",
-        "conflict": "overwrite"
-      }
+    "root": {
+      "destination": "",
+      "method": "symlink",
+      "conflict": "overwrite",
+      "type": "dir",
+      "hook": "postBuild",
+      "contents": true
+    },
+    "modules/custom": {
+      "destination": "modules/custom",
+      "method": "symlink",
+      "conflict": "overwrite",
+      "type": "dir",
+      "hook": "preBuild"
+    },
+    "themes/custom": {
+      "destination": "themes/custom",
+      "method": "symlink",
+      "conflict": "overwrite",
+      "type": "dir",
+      "hook": "postBuild"
     },
     "files": {
-      "settings/settings.php": {
-        "destination": "sites/default/settings.php",
-        "method": "symlink",
-        "conflict": "overwrite"
-      },
-      "settings/secret.settings.php": {
-        "destination": "sites/default/secret.settings.php",
-        "method": "symlink",
-        "conflict": "overwrite"
-      },
-      "settings/local.settings.php": {
-        "destination": "sites/default/local.settings.php",
-        "method": "symlink",
-        "conflict": "overwrite"
-      }
+      "destination": "sites/default/files",
+      "method": "symlink",
+      "conflict": "overwrite",
+      "type": "dir",
+      "hook": "postBuild"
+    },
+    "settings": {
+      "destination": "sites/default",
+      "method": "symlink",
+      "conflict": "overwrite",
+      "type": "file",
+      "hook": "postBuild",
+      "required": true,
+      "contents": true
     }
   },
   "run": {
