@@ -1,6 +1,6 @@
 {
   "name": "aquifer",
-  "version": "1.0.0-beta2",
+  "version": "1.0.0-beta3",
   "description": "Drupal build, test, and deployment CLI.",
   "scripts": {
     "test-unit": "node_modules/.bin/mocha test/unit/*",
