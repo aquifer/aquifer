@@ -11,8 +11,7 @@ themes/contrib
 files/*
 !files/.gitkeep
 
-secret.settings.php
-local.settings.php
+settings.local.php
 
 .aquifer/node_modules
 aquifer.local.json
