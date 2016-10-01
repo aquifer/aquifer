@@ -1,6 +1,6 @@
 {
   "name": "aquifer-project-dependencies",
-  "version": "0.1.4",
+  "version": "1.0.0-beta3",
   "description": "Drupal build, test, and deployment CLI.",
   "license": "GPL-2.0",
   "repository": "none"
