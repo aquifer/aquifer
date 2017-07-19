@@ -7,7 +7,6 @@ Aquifer is a command line interface that makes it easy to scaffold, build, test,
 | Aquifer Version | Node Version |
 |-----------------|-------------:|
 | 1.0.0           |    >= 4.5.0  |
-| 1.0.0-beta2     |    >= 4.5.0  |
 
 ## Installation
 
@@ -16,7 +15,6 @@ Aquifer is an npm module, installing it is relatively painless:
 * Ensure that the latest version of Node.js and npm are installed. We recommend using [nvm](https://github.com/creationix/nvm) to do this.
 * Install [Drush](http://www.drush.org/en/master/install/). Aquifer is compatible with Drush 7.x and 6.x.
 * In your command line, run: `npm install -g aquifer`
-* To install the Aquifer beta instead, run: `npm install -g aquifer@1.0.0-beta1`
 
 Aquifer should now be installed!
 
